@@ -39,3 +39,26 @@ footer {
     font-weight: bold;
     color: #9ed034; /* Highlight active link color */
 }
+
+/* Additional styles for the cliffs page */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #9ed034; /* Main heading color */
+}
+
+.cliff-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cliff-images img {
+    max-width: 30%; /* Adjust image size */
+    margin: 10px; /* Space between images */
+}
+
