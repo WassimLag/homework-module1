@@ -29,9 +29,46 @@
 
     <footer>
         <div class="footer-content">
+            <div class="partners">
+                <h3>Our Partners</h3>
+                <ul id="partners-list">
+                    <!-- The following code has been commented out for JavaScript rendering -->
+                    <!-- 
+                    <li><img src="images/partner-rentalbike.png" alt="Rental Bike" /></li>
+                    <li><img src="images/partner-tourgroup.png" alt="Tour Group" /></li>
+                    <li><img src="images/partner-collegetours.png" alt="College Tours" /></li>
+                    <li><img src="images/partner-campingadv.png" alt="Camping Adventure" /></li>
+                    <li><img src="images/partner-cabinrental.png" alt="Cabin Rentals" /></li>
+                    <li><img src="images/partner-bustour.png" alt="Bus Tour" /></li>
+                    -->
+                </ul>
+            </div>
             <div class="copy">&copy; 2024 Great Cliffs</div>
             <div class="social"><h3>Follow us on Social Media</h3></div>
         </div>
     </footer>
+
+    <script>
+        // JavaScript for rendering partner images
+        const partners = [
+            { src: 'images/partner-rentalbike.png', alt: 'Rental Bike' },
+            { src: 'images/partner-tourgroup.png', alt: 'Tour Group' },
+            { src: 'images/partner-collegetours.png', alt: 'College Tours' },
+            { src: 'images/partner-campingadv.png', alt: 'Camping Adventure' },
+            { src: 'images/partner-cabinrental.png', alt: 'Cabin Rentals' },
+            { src: 'images/partner-bustour.png', alt: 'Bus Tour' },
+        ];
+
+        const partnersList = document.getElementById('partners-list');
+
+        partners.forEach(partner => {
+            const li = document.createElement('li');
+            const img = document.createElement('img');
+            img.src = partner.src;
+            img.alt = partner.alt;
+            li.appendChild(img);
+            partnersList.appendChild(li);
+        });
+    </script>
 </body>
 </html>

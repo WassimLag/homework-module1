@@ -22,9 +22,9 @@
     </header>
 
     <main>
+        <div id="digital-clock"></div> <!-- Digital Clock Display -->
+        
         <h2>California's Greatest Cliffs</h2>
-        <div id="digital-clock"></div> <!-- Add this line for the clock display -->
-        <p>The greatest cliffs are...</p>
         <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs has their own uniqueness and beauty: West Cliff, North Cliff, East Cliff, and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots, and overnight cabins.</p>
         <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100-mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
 
@@ -55,21 +55,47 @@
         <div class="footer-content">
             <div class="partners">
                 <h3>Our Partners</h3>
-                <ul>
+                <ul id="partners-list">
+                    <!-- The following code has been commented out for JavaScript rendering -->
+                    <!-- 
                     <li><img src="images/partner-rentalbike.png" alt="Rental Bike" /></li>
                     <li><img src="images/partner-tourgroup.png" alt="Tour Group" /></li>
                     <li><img src="images/partner-collegetours.png" alt="College Tours" /></li>
                     <li><img src="images/partner-campingadv.png" alt="Camping Adventure" /></li>
                     <li><img src="images/partner-cabinrental.png" alt="Cabin Rentals" /></li>
                     <li><img src="images/partner-bustour.png" alt="Bus Tour" /></li>
+                    -->
                 </ul>
             </div>
             <div class="copy">&copy; 2024 Great Cliffs</div>
             <div class="social"><h3>Follow us on Social Media</h3></div>
         </div>
     </footer>
+
     <script>
-       function currentTime() {
+        // JavaScript for rendering partner images
+        const partners = [
+            { src: 'images/partner-rentalbike.png', alt: 'Rental Bike' },
+            { src: 'images/partner-tourgroup.png', alt: 'Tour Group' },
+            { src: 'images/partner-collegetours.png', alt: 'College Tours' },
+            { src: 'images/partner-campingadv.png', alt: 'Camping Adventure' },
+            { src: 'images/partner-cabinrental.png', alt: 'Cabin Rentals' },
+            { src: 'images/partner-bustour.png', alt: 'Bus Tour' },
+        ];
+
+        const partnersList = document.getElementById('partners-list');
+
+        partners.forEach(partner => {
+            const li = document.createElement('li');
+            const img = document.createElement('img');
+            img.src = partner.src;
+            img.alt = partner.alt;
+            li.appendChild(img);
+            partnersList.appendChild(li);
+        });
+
+        // JavaScript for the digital clock
+        function currentTime() {
             let now = new Date(); // Get current date and time
             let hours = now.getHours();
             let minutes = now.getMinutes();
