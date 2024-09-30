@@ -7,5 +7,35 @@ function generateRandomCode(length) {
     document.getElementById('generated-code').innerText = code; // Display generated code
 }
 
-// Example usage
-document.getElementById('submit-button').disabled = true; // Example button disabling
+// Function to evaluate user input against generated code
+function evaluateCode() {
+    const userInput = document.getElementById('code-input').value.trim();
+    const generatedCode = document.getElementById('generated-code').innerText.trim();
+
+    if (userInput === generatedCode) {
+        disableButton(false); // Enable the button
+    } else {
+        disableButton(true); // Disable the button
+    }
+}
+
+function disableButton(isDisabled) {
+    const submitButton = document.getElementById('submit-button');
+    submitButton.disabled = isDisabled;
+
+    // Update button appearance
+    if (isDisabled) {
+        submitButton.classList.add('disabled');
+    } else {
+        submitButton.classList.remove('disabled');
+    }
+}
+
+// Set initial state of the button
+window.onload = function() {
+    disableButton(true); // Disable on load
+    generateRandomCode(8); // Generate code on load
+}
+
+// Event listener for input changes
+document.getElementById('code-input').addEventListener('input', evaluateCode);

@@ -17,3 +17,6 @@ partners.forEach(partner => {
     li.appendChild(img);
     partnersList.appendChild(li);
 });
+
+// Grouping variables
+let code, str, getCode, btnValue;
