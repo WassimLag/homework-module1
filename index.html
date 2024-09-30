@@ -72,53 +72,8 @@
         </div>
     </footer>
 
-    <script>
-        // JavaScript for rendering partner images
-        const partners = [
-            { src: 'images/partner-rentalbike.png', alt: 'Rental Bike' },
-            { src: 'images/partner-tourgroup.png', alt: 'Tour Group' },
-            { src: 'images/partner-collegetours.png', alt: 'College Tours' },
-            { src: 'images/partner-campingadv.png', alt: 'Camping Adventure' },
-            { src: 'images/partner-cabinrental.png', alt: 'Cabin Rentals' },
-            { src: 'images/partner-bustour.png', alt: 'Bus Tour' },
-        ];
+    <script src="js/digclock.js"></script>
+<script src="js/site_scripts.js"></script>
 
-        const partnersList = document.getElementById('partners-list');
-
-        partners.forEach(partner => {
-            const li = document.createElement('li');
-            const img = document.createElement('img');
-            img.src = partner.src;
-            img.alt = partner.alt;
-            li.appendChild(img);
-            partnersList.appendChild(li);
-        });
-
-        // JavaScript for the digital clock
-        function currentTime() {
-            let now = new Date(); // Get current date and time
-            let hours = now.getHours();
-            let minutes = now.getMinutes();
-            let seconds = now.getSeconds();
-            let amPm = hours >= 12 ? 'PM' : 'AM'; // Determine AM or PM
-
-            // Format time
-            if (minutes < 10) minutes = '0' + minutes;
-            if (seconds < 10) seconds = '0' + seconds;
-
-            // Convert military time to standard time
-            if (hours > 12) {
-                hours -= 12;
-            } else if (hours === 0) {
-                hours = 12; // Convert 0 to 12 AM
-            }
-
-            let clockDisplay = hours + ':' + minutes + ':' + seconds + ' ' + amPm;
-            document.getElementById('digital-clock').innerHTML = clockDisplay; // Display the clock
-        }
-
-        currentTime(); // Initial call to display immediately
-        setInterval(currentTime, 1000); // Update every second
-    </script>
 </body>
 </html>
