@@ -5,8 +5,7 @@ body {
 }
 
 header {
-    background-image: url('images/cliff_rock.jpg'); /* Set the background image */
-    background-size: cover;
+    background-color: #343a40; /* Header background color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -22,43 +21,112 @@ header {
     margin-right: 20px;
 }
 
+.main-menu a {
+    color: white; /* Link color in the navigation */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.main-menu a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+h1, h2, h3 {
+    color: #9ed034; /* Main heading color */
+}
+
+main {
+    text-align: center; /* Center align text in the main section */
+    margin: 20px 0; /* Margin around main content */
+}
+
+.cliff-images {
+    margin: 20px 0; /* Margin above and below */
+}
+
+.image-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center align items */
+}
+
+.image-item {
+    margin: 10px; /* Space between items */
+    max-width: 220px; /* Limit the size of image items */
+    text-align: center; /* Center text under images */
+}
+
+.image-item img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
 footer {
-    background-color: #343a40;
+    background-color: #343a40; /* Footer background color */
     color: white;
     text-align: center;
     padding: 10px;
 }
 
-/* Add hover effect for links */
-.main-menu a:hover {
-    text-decoration: underline;
-}
-
-/* Styles for active links */
-.main-menu a.active {
-    font-weight: bold;
-    color: #9ed034; /* Highlight active link color */
-}
-
-/* Additional styles for the cliffs page */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-h2 {
-    color: #9ed034; /* Main heading color */
-}
-
-.cliff-images {
+.footer-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
 }
 
-.cliff-images img {
-    max-width: 30%; /* Adjust image size */
-    margin: 10px; /* Space between images */
+.partners ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* No padding */
 }
 
+.partners li {
+    display: inline-block; /* Inline block for horizontal layout */
+    margin: 10px; /* Space between partners */
+}
+
+.partners img {
+    max-width: 80px; /* Set max width for partner logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.copy {
+    margin-top: 10px; /* Space above copyright */
+}
+
+.social {
+    margin-top: 5px; /* Space above social media links */
+}
+
+form {
+    max-width: 600px; /* Max width for form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Spacing around labels */
+}
+
+input, textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for better look */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    background-color: #343a40; /* Button background */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+button:hover {
+    background-color: #9ed034; /* Change on hover */
+}
