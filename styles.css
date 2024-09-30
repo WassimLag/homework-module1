@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-image: url('images/cliff_rock.jpg'); /* Background image */
+    background-image: url('images/cliff_rock.jpg'); /* Set the background image */
     background-size: cover;
     color: white;
     padding: 20px;
@@ -27,4 +27,15 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+/* Add hover effect for links */
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for active links */
+.main-menu a.active {
+    font-weight: bold;
+    color: #9ed034; /* Highlight active link color */
 }
