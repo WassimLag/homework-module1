@@ -4,41 +4,108 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Great Cliff's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: url('images/cliff_rock.jpg');
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .partners {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .partners img {
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .copy {
+            margin-top: 20px;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+            color: #9ed034;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="main-header">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Great Cliffs Logo" width="150">
-                </div>
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="activities.html">Activities</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <img src="images/east-village.jpg" alt="East Village View" width="600" height="400">
-        </header>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Great Cliffs Logo" width="150">
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <h2>Introducing California's Greatest Cliffs</h2>
-            <p>California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. Located within a 100-mile radius from Irvine, California, they are easily reachable by road. The most popular and visited is West Cliff.</p>
-        </main>
+    <main>
+        <h2>Introducing California's Greatest Cliffs</h2>
+        <p>California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. Located within a 100-mile radius from Irvine, California, they are easily reachable by road. The most popular and visited is West Cliff.</p>
+    </main>
 
-        <footer>
-            <div id="nondisclaimer">
-                <div class="copy">&copy; 2024 Great Cliffs</div>
-                <div class="social">
-                    <h3>Follow Us on Social Media</h3>
-                </div>
-            </div>
-            <div id="disclaimer">
-                <p>Disclaimer: This website is for educational purposes only.</p>
-            </div>
-        </footer>
+    <div class="partners">
+        <img src="images/partner-tourgroup.png" alt="Tour Group">
+        <img src="images/partner-bustour.png" alt="Bus Tour">
+        <img src="images/partner-cabinrental.png" alt="Cabin Rentals">
+        <img src="images/partner-campingadv.png" alt="Camping Adventure">
+        <img src="images/partner-collegetours.png" alt="College Tours">
+        <img src="images/partner-rentalbike.png" alt="Rental Bike">
     </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="copy">&copy; 2024 Great Cliffs</div>
+    </footer>
 </body>
 </html>
