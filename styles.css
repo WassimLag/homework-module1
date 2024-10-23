@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+#home header {
+    background-image: url('images/cliff_rock.jpg');
+}
+
+#activities header {
+    background-image: url('images/cliff_rock.jpg');
+}
+
+#contact header {
+    background-image: url('images/runfly.jpg');
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    font-weight: bold;
+}
+
+.partners img {
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .copy {
+    margin-top: 20px;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4977D1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #9ed034;
+}
